@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Ecommerce Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="left_header">
+                <div class="logo">
+                    <h1>LOGO</h1>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search-input" class="search-input" placeholder="Pesquise por um produto...">
+                </div>
+            </div>
+            <div class="right_header">
+                <div class="menu_nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="saldo">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <p>Saldo:  R$</p>
+                                    <span> 999999</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-heart"></i>
+                                <p>Favoritos</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>Meu carrinho</p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="account">
+                    <div class="account_content">
+                        <img src="./assets/account.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left_bar">
+            <div class="container_left">
+                <div class="collapsible">
+                    <p>Categoria</p><i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="content_left">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Living</p>
+                      </label>
+                      <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Gadget</p>
+                      </label>
+                      <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Eletronics</p>
+                      </label>
+                      <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Fashion</p>
+                      </label>
+                </div>
+            
+                <div class="collapsible">
+                    <p>Preço</p><i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="content_left">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>High to Low</p>
+                      </label>
+                      <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Low to High</p>
+                      </label>
+                </div>
+            
+                <div class="collapsible">
+                    <p>Localização</p><i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="content_left">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Nearest</p>
+                      </label>
+                      <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Farthest</p>
+                      </label>
+                </div>
+            
+                <div class="collapsible">
+                    <p>Avaliação</p><i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="content_left">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Highest</p>
+                      </label>
+                      <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Lowest</p>
+                      </label>
+                </div>
+
+                <div class="collapsible">
+                    <p>Prazo de envio</p><i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="content_left">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Regular</p>
+                      </label>
+                      <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Next Day</p>
+                      </label>
+                      <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Same Day</p>
+                      </label>
+                      <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Instant</p>
+                      </label>
+                      <button>See more +</button>
+                </div>
+
+                <div class="collapsible">
+                    <p>Cidade</p><i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="content_left">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Pune</p>
+                      </label>
+                      <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Mumbai</p>
+                      </label>
+                      <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Nashik</p>
+                      </label>
+                      <label class="checkbox-container">
+                        <input type="checkbox" name="favoriteColors" ng-model="notification.checked">
+                        <span class="checkmark">
+                          <i class='bx bx-check'></i>
+                        </span>
+                        <p>Blipvine</p>
+                      </label>
+                      <button>See more +</button>
+                </div>
+              </div>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <div class="nav_sidebar">
+                    <nav>
+                        <ul id="nav-list">
+                          <li><a href="#">HomePage</a></li>
+                          <li><a href="#">Gadget</a></li>
+                          <li><a href="#">Nome_Loja</a></li>
+                        </ul>
+                      </nav>
+                </div>
+                <div class="midbar_content">
+                    <div class="info_container">
+                        <div class="info_content">
+                            <div class="img_container">
+                                <img src="./assets/logo_apple.png">
+                            </div>
+                            <div class="text_container">
+                                <div class="title_info">
+                                    <p>Apple Official Store</p>
+                                    <i class='bx bxs-badge-check'></i>
+                                </div>
+                                <div class="subtitle_info">
+                                    <div class="status">
+                                        <i class="fa-sharp fa-solid fa-circle"></i>
+                                        <p>Online</p>
+                                    </div>
+                                    <div class="location">
+                                        <i class='bx bxs-map'></i>
+                                        <p>Brazil</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons_content">
+                            <button class="button_prenc">Seguir</button>
+                            <button class="button_fur">Bate-Papo</button>
+                            <button class="button_fur">Mais sobre a Loja</button>
+                        </div>
+                    </div>
+                    <div class="list_container">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-shop"></i>
+                                <p>Produto:</p>
+                                <span>999</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <p>Seguindo:</p>
+                                <span>999</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-message"></i>
+                                <p>Desempenho do Chat:</p>
+                                <span>999</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-user-plus"></i>
+                                <p>Seguidores:</p>
+                                <span>999</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <p>Avaliação:</p>
+                                <span>9.9</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user-check"></i>
+                                <p>Ingressou:</p>
+                                <span>00/00/0000</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class='bx bxs-check-shield'></i>
+                                <p>Produtos verificados</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-box"></i>
+                                <p>Pacote seguro</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-truck-moving"></i>
+                                <p>Entrega grátis</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class="fa-brands fa-instagram"></i>
+                                <p>@username</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>username@email.com</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+99 99 9-99999999</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text_catalog"><h2>Catálogo</h2></div>
+            <div class="grid_content">
+                <div class="card_produto">
+                    <div class="image_produto">
+                        <img src="./assets/1.jpg">
+                    </div>
+                    <div class="backbar_info">
+                        <div class="sidebar_produto_card">
+                            <div class="title_produto"><p>TITULO DO PRODUTO</p></div>
+                            <div class="cores_produto">
+                                <div class="cor" style="background-color: #fff;"></div>
+                                <div class="cor" style="background-color:beige;"></div>
+                                <div class="cor" style="background-color:darkgray;"></div>
+                                <div class="cor" style="background-color:#111;"></div>
+                            </div>
+                        </div>
+                        <div class="midbar_produto_card">
+                            <div class="subtitle_produto">
+                                <p>SUBTITULO DO PRODUTO</p>
+                            </div>
+                            <div class="preco_produto">
+                                <p>R$ 1399</p>
+                                <span>R$ 1450</span>
+                            </div>
+                            <div class="buttons_buy">
+                                <button class="button_fur">Adicionar ao carrinho</button>
+                                <button class="button_prenc">Comprar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_produto">
+                    <div class="image_produto">
+                        <img src="./assets/2.jpg">
+                    </div>
+                    <div class="backbar_info">
+                        <div class="sidebar_produto_card">
+                            <div class="title_produto"><p>TITULO DO PRODUTO</p></div>
+                            <div class="cores_produto">
+                                <div class="cor" style="background-color: #fff;"></div>
+                                <div class="cor" style="background-color:beige;"></div>
+                                <div class="cor" style="background-color:darkgray;"></div>
+                                <div class="cor" style="background-color:#111;"></div>
+                            </div>
+                        </div>
+                        <div class="midbar_produto_card">
+                            <div class="subtitle_produto">
+                                <p>SUBTITULO DO PRODUTO</p>
+                            </div>
+                            <div class="preco_produto">
+                                <p>R$ 1399</p>
+                                <span>R$ 1450</span>
+                            </div>
+                            <div class="buttons_buy">
+                                <button class="button_fur">Adicionar ao carrinho</button>
+                                <button class="button_prenc">Comprar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_produto">
+                    <div class="image_produto">
+                        <img src="./assets/3.jpg">
+                    </div>
+                    <div class="backbar_info">
+                        <div class="sidebar_produto_card">
+                            <div class="title_produto"><p>TITULO DO PRODUTO</p></div>
+                            <div class="cores_produto">
+                                <div class="cor" style="background-color: #fff;"></div>
+                                <div class="cor" style="background-color:beige;"></div>
+                                <div class="cor" style="background-color:darkgray;"></div>
+                                <div class="cor" style="background-color:#111;"></div>
+                            </div>
+                        </div>
+                        <div class="midbar_produto_card">
+                            <div class="subtitle_produto">
+                                <p>SUBTITULO DO PRODUTO</p>
+                            </div>
+                            <div class="preco_produto">
+                                <p>R$ 1399</p>
+                                <span>R$ 1450</span>
+                            </div>
+                            <div class="buttons_buy">
+                                <button class="button_fur">Adicionar ao carrinho</button>
+                                <button class="button_prenc">Comprar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_produto">
+                    <div class="image_produto">
+                        <img src="./assets/4.jpg">
+                    </div>
+                    <div class="backbar_info">
+                        <div class="sidebar_produto_card">
+                            <div class="title_produto"><p>TITULO DO PRODUTO</p></div>
+                            <div class="cores_produto">
+                                <div class="cor" style="background-color: #fff;"></div>
+                                <div class="cor" style="background-color:beige;"></div>
+                                <div class="cor" style="background-color:darkgray;"></div>
+                                <div class="cor" style="background-color:#111;"></div>
+                            </div>
+                        </div>
+                        <div class="midbar_produto_card">
+                            <div class="subtitle_produto">
+                                <p>SUBTITULO DO PRODUTO</p>
+                            </div>
+                            <div class="preco_produto">
+                                <p>R$ 1399</p>
+                                <span>R$ 1450</span>
+                            </div>
+                            <div class="buttons_buy">
+                                <button class="button_fur">Adicionar ao carrinho</button>
+                                <button class="button_prenc">Comprar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_produto">
+                    <div class="image_produto">
+                        <img src="./assets/5.jpg">
+                    </div>
+                    <div class="backbar_info">
+                        <div class="sidebar_produto_card">
+                            <div class="title_produto"><p>TITULO DO PRODUTO</p></div>
+                            <div class="cores_produto">
+                                <div class="cor" style="background-color: #fff;"></div>
+                                <div class="cor" style="background-color:beige;"></div>
+                                <div class="cor" style="background-color:darkgray;"></div>
+                                <div class="cor" style="background-color:#111;"></div>
+                            </div>
+                        </div>
+                        <div class="midbar_produto_card">
+                            <div class="subtitle_produto">
+                                <p>SUBTITULO DO PRODUTO</p>
+                            </div>
+                            <div class="preco_produto">
+                                <p>R$ 1399</p>
+                                <span>R$ 1450</span>
+                            </div>
+                            <div class="buttons_buy">
+                                <button class="button_fur">Adicionar ao carrinho</button>
+                                <button class="button_prenc">Comprar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_produto">
+                    <div class="image_produto">
+                        <img src="./assets/6.jpg">
+                    </div>
+                    <div class="backbar_info">
+                        <div class="sidebar_produto_card">
+                            <div class="title_produto"><p>TITULO DO PRODUTO</p></div>
+                            <div class="cores_produto">
+                                <div class="cor" style="background-color: #fff;"></div>
+                                <div class="cor" style="background-color:beige;"></div>
+                                <div class="cor" style="background-color:darkgray;"></div>
+                                <div class="cor" style="background-color:#111;"></div>
+                            </div>
+                        </div>
+                        <div class="midbar_produto_card">
+                            <div class="subtitle_produto">
+                                <p>SUBTITULO DO PRODUTO</p>
+                            </div>
+                            <div class="preco_produto">
+                                <p>R$ 1399</p>
+                                <span>R$ 1450</span>
+                            </div>
+                            <div class="buttons_buy">
+                                <button class="button_fur">Adicionar ao carrinho</button>
+                                <button class="button_prenc">Comprar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_produto">
+                    <div class="image_produto">
+                        <img src="./assets/7.jpg">
+                    </div>
+                    <div class="backbar_info">
+                        <div class="sidebar_produto_card">
+                            <div class="title_produto"><p>TITULO DO PRODUTO</p></div>
+                            <div class="cores_produto">
+                                <div class="cor" style="background-color: #fff;"></div>
+                                <div class="cor" style="background-color:beige;"></div>
+                                <div class="cor" style="background-color:darkgray;"></div>
+                                <div class="cor" style="background-color:#111;"></div>
+                            </div>
+                        </div>
+                        <div class="midbar_produto_card">
+                            <div class="subtitle_produto">
+                                <p>SUBTITULO DO PRODUTO</p>
+                            </div>
+                            <div class="preco_produto">
+                                <p>R$ 1399</p>
+                                <span>R$ 1450</span>
+                            </div>
+                            <div class="buttons_buy">
+                                <button class="button_fur">Adicionar ao carrinho</button>
+                                <button class="button_prenc">Comprar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_produto">
+                    <div class="image_produto">
+                        <img src="./assets/8.jpg">
+                    </div>
+                    <div class="backbar_info">
+                        <div class="sidebar_produto_card">
+                            <div class="title_produto"><p>TITULO DO PRODUTO</p></div>
+                            <div class="cores_produto">
+                                <div class="cor" style="background-color: #fff;"></div>
+                                <div class="cor" style="background-color:beige;"></div>
+                                <div class="cor" style="background-color:darkgray;"></div>
+                                <div class="cor" style="background-color:#111;"></div>
+                            </div>
+                        </div>
+                        <div class="midbar_produto_card">
+                            <div class="subtitle_produto">
+                                <p>SUBTITULO DO PRODUTO</p>
+                            </div>
+                            <div class="preco_produto">
+                                <p>R$ 1399</p>
+                                <span>R$ 1450</span>
+                            </div>
+                            <div class="buttons_buy">
+                                <button class="button_fur">Adicionar ao carrinho</button>
+                                <button class="button_prenc">Comprar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Desenvolvido por:</p>
+        <a href="https://arthurxavieerr.github.io/Portfolio_arthurxavieerr/">
+            <span>Arthurxavieerr</span>
+        </a>
+    </footer>
+    <script src="nav.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
